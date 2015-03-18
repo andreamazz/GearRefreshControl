@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65802E821AB9677200E40510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E811AB9677200E40510 /* AppDelegate.swift */; };
+		65802E841AB9677200E40510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E831AB9677200E40510 /* ViewController.swift */; };
+		65802E871AB9677200E40510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65802E851AB9677200E40510 /* Main.storyboard */; };
+		65802E891AB9677200E40510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65802E881AB9677200E40510 /* Images.xcassets */; };
+		65802E8C1AB9677200E40510 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65802E8A1AB9677200E40510 /* LaunchScreen.xib */; };
+		65802E981AB9677300E40510 /* GearAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E971AB9677300E40510 /* GearAnimationTests.swift */; };
+		65802EA31AB97EFE00E40510 /* MainGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802EA21AB97EFE00E40510 /* MainGear.swift */; };
+		65802EA51AB988F800E40510 /* BigGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802EA41AB988F800E40510 /* BigGear.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65802E921AB9677300E40510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65802E741AB9677200E40510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65802E7B1AB9677200E40510;
+			remoteInfo = GearAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65802E7C1AB9677200E40510 /* GearAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GearAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65802E801AB9677200E40510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65802E811AB9677200E40510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65802E831AB9677200E40510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65802E861AB9677200E40510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65802E881AB9677200E40510 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		65802E8B1AB9677200E40510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		65802E911AB9677300E40510 /* GearAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65802E961AB9677300E40510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65802E971AB9677300E40510 /* GearAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearAnimationTests.swift; sourceTree = "<group>"; };
+		65802EA21AB97EFE00E40510 /* MainGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGear.swift; sourceTree = "<group>"; };
+		65802EA41AB988F800E40510 /* BigGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigGear.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65802E791AB9677200E40510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65802E8E1AB9677300E40510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65802E731AB9677200E40510 = {
+			isa = PBXGroup;
+			children = (
+				65802E7E1AB9677200E40510 /* GearAnimation */,
+				65802E941AB9677300E40510 /* GearAnimationTests */,
+				65802E7D1AB9677200E40510 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65802E7D1AB9677200E40510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65802E7C1AB9677200E40510 /* GearAnimation.app */,
+				65802E911AB9677300E40510 /* GearAnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65802E7E1AB9677200E40510 /* GearAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				65802EA11AB97EF000E40510 /* Views */,
+				65802E811AB9677200E40510 /* AppDelegate.swift */,
+				65802E831AB9677200E40510 /* ViewController.swift */,
+				65802E851AB9677200E40510 /* Main.storyboard */,
+				65802E881AB9677200E40510 /* Images.xcassets */,
+				65802E8A1AB9677200E40510 /* LaunchScreen.xib */,
+				65802E7F1AB9677200E40510 /* Supporting Files */,
+			);
+			path = GearAnimation;
+			sourceTree = "<group>";
+		};
+		65802E7F1AB9677200E40510 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65802E801AB9677200E40510 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65802E941AB9677300E40510 /* GearAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				65802E971AB9677300E40510 /* GearAnimationTests.swift */,
+				65802E951AB9677300E40510 /* Supporting Files */,
+			);
+			path = GearAnimationTests;
+			sourceTree = "<group>";
+		};
+		65802E951AB9677300E40510 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65802E961AB9677300E40510 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65802EA11AB97EF000E40510 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65802EA21AB97EFE00E40510 /* MainGear.swift */,
+				65802EA41AB988F800E40510 /* BigGear.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65802E7B1AB9677200E40510 /* GearAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65802E9B1AB9677300E40510 /* Build configuration list for PBXNativeTarget "GearAnimation" */;
+			buildPhases = (
+				65802E781AB9677200E40510 /* Sources */,
+				65802E791AB9677200E40510 /* Frameworks */,
+				65802E7A1AB9677200E40510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GearAnimation;
+			productName = GearAnimation;
+			productReference = 65802E7C1AB9677200E40510 /* GearAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65802E901AB9677300E40510 /* GearAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65802E9E1AB9677300E40510 /* Build configuration list for PBXNativeTarget "GearAnimationTests" */;
+			buildPhases = (
+				65802E8D1AB9677300E40510 /* Sources */,
+				65802E8E1AB9677300E40510 /* Frameworks */,
+				65802E8F1AB9677300E40510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65802E931AB9677300E40510 /* PBXTargetDependency */,
+			);
+			name = GearAnimationTests;
+			productName = GearAnimationTests;
+			productReference = 65802E911AB9677300E40510 /* GearAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65802E741AB9677200E40510 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Fancy Pixel";
+				TargetAttributes = {
+					65802E7B1AB9677200E40510 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					65802E901AB9677300E40510 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 65802E7B1AB9677200E40510;
+					};
+				};
+			};
+			buildConfigurationList = 65802E771AB9677200E40510 /* Build configuration list for PBXProject "GearAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65802E731AB9677200E40510;
+			productRefGroup = 65802E7D1AB9677200E40510 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65802E7B1AB9677200E40510 /* GearAnimation */,
+				65802E901AB9677300E40510 /* GearAnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65802E7A1AB9677200E40510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65802E871AB9677200E40510 /* Main.storyboard in Resources */,
+				65802E8C1AB9677200E40510 /* LaunchScreen.xib in Resources */,
+				65802E891AB9677200E40510 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65802E8F1AB9677300E40510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65802E781AB9677200E40510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65802EA31AB97EFE00E40510 /* MainGear.swift in Sources */,
+				65802EA51AB988F800E40510 /* BigGear.swift in Sources */,
+				65802E841AB9677200E40510 /* ViewController.swift in Sources */,
+				65802E821AB9677200E40510 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65802E8D1AB9677300E40510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65802E981AB9677300E40510 /* GearAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65802E931AB9677300E40510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65802E7B1AB9677200E40510 /* GearAnimation */;
+			targetProxy = 65802E921AB9677300E40510 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65802E851AB9677200E40510 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65802E861AB9677200E40510 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65802E8A1AB9677200E40510 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65802E8B1AB9677200E40510 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65802E991AB9677300E40510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65802E9A1AB9677300E40510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65802E9C1AB9677300E40510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GearAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65802E9D1AB9677300E40510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GearAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		65802E9F1AB9677300E40510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GearAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GearAnimation.app/GearAnimation";
+			};
+			name = Debug;
+		};
+		65802EA01AB9677300E40510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GearAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GearAnimation.app/GearAnimation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65802E771AB9677200E40510 /* Build configuration list for PBXProject "GearAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65802E991AB9677300E40510 /* Debug */,
+				65802E9A1AB9677300E40510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65802E9B1AB9677300E40510 /* Build configuration list for PBXNativeTarget "GearAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65802E9C1AB9677300E40510 /* Debug */,
+				65802E9D1AB9677300E40510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65802E9E1AB9677300E40510 /* Build configuration list for PBXNativeTarget "GearAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65802E9F1AB9677300E40510 /* Debug */,
+				65802EA01AB9677300E40510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65802E741AB9677200E40510 /* Project object */;
+}
