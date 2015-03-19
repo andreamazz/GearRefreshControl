@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654E94251ABAC1CE007CDCD8 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E94241ABAC1CE007CDCD8 /* ShadowView.swift */; };
 		65802E821AB9677200E40510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E811AB9677200E40510 /* AppDelegate.swift */; };
 		65802E841AB9677200E40510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E831AB9677200E40510 /* ViewController.swift */; };
 		65802E871AB9677200E40510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65802E851AB9677200E40510 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		654E94241ABAC1CE007CDCD8 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		65802E7C1AB9677200E40510 /* GearAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GearAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65802E801AB9677200E40510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65802E811AB9677200E40510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				65802EA21AB97EFE00E40510 /* MainGear.swift */,
 				65802EA41AB988F800E40510 /* BigGear.swift */,
+				654E94241ABAC1CE007CDCD8 /* ShadowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				65802EA51AB988F800E40510 /* BigGear.swift in Sources */,
 				65802E841AB9677200E40510 /* ViewController.swift in Sources */,
 				65802E821AB9677200E40510 /* AppDelegate.swift in Sources */,
+				654E94251ABAC1CE007CDCD8 /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +425,7 @@
 				65802E9D1AB9677300E40510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65802E9E1AB9677300E40510 /* Build configuration list for PBXNativeTarget "GearAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				65802EA01AB9677300E40510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

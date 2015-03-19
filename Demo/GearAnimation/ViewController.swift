@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UITableViewController {
 
     var refreshContainerView: UIView!
+    var overlayView: UIView!
     var isRefreshControlAnimating = false
+    var shadowView: ShadowView!
     var centerGear: MainGear!
     var topGear: BigGear! // cue Jessica from the Allman brothers
     var rightGear: BigGear!
@@ -38,6 +40,12 @@ class ViewController: UITableViewController {
 
         self.refreshContainerView = UIView(frame: self.refreshControl!.bounds)
         self.refreshContainerView.backgroundColor = UIColor(red:0.13, green:0.29, blue:0.55, alpha:1)
+
+        self.overlayView = UIView(frame: self.refreshControl!.bounds)
+        self.overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
+
+        self.shadowView = ShadowView(frame: self.refreshControl!.bounds)
+        self.shadowView.shadowPercentage = 0.2
 
         self.centerGear = MainGear(frame: CGRectMake(0, 0, 48, 48))
         self.centerGear.backgroundColor = UIColor.clearColor()
@@ -69,6 +77,8 @@ class ViewController: UITableViewController {
         self.refreshContainerView.addSubview(self.bottomGear)
         self.refreshContainerView.addSubview(self.leftGear)
         self.refreshContainerView.addSubview(self.centerGear)
+        self.refreshContainerView.addSubview(self.shadowView)
+        self.refreshContainerView.addSubview(self.overlayView)
         
         self.refreshContainerView.clipsToBounds = true
         self.refreshControl!.tintColor = UIColor.clearColor()
@@ -92,6 +102,8 @@ class ViewController: UITableViewController {
         var pullDistance = max(0.0, -self.refreshControl!.frame.origin.y);
         var pullRatio = min(max(pullDistance, 0.0), 140.0) / 140.0;
 
+        self.overlayView.alpha = 1 - pullRatio
+
         self.centerGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame), y: pullDistance / 2)
         self.topGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 48, y: pullDistance / 2 - 49)
         self.rightGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 120, y: pullDistance / 2)
@@ -100,7 +112,7 @@ class ViewController: UITableViewController {
 
         refreshBounds.size.height = pullDistance;
 
-        self.refreshContainerView.frame = refreshBounds;
+        [self.refreshContainerView, self.overlayView].map({$0.frame = refreshBounds});
 
         // Don't rotate the gears if the refresh animation is playing
         if (!self.refreshControl!.refreshing && !self.isRefreshControlAnimating) {
