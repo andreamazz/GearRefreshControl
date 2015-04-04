@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65188E081AD00D5E0015488E /* GearRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65188E071AD00D5E0015488E /* GearRefreshControl.swift */; };
 		654E94251ABAC1CE007CDCD8 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E94241ABAC1CE007CDCD8 /* ShadowView.swift */; };
 		65802E821AB9677200E40510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E811AB9677200E40510 /* AppDelegate.swift */; };
 		65802E841AB9677200E40510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E831AB9677200E40510 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65188E071AD00D5E0015488E /* GearRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearRefreshControl.swift; sourceTree = "<group>"; };
 		654E94241ABAC1CE007CDCD8 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		65802E7C1AB9677200E40510 /* GearAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GearAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65802E801AB9677200E40510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				65802EA21AB97EFE00E40510 /* MainGear.swift */,
 				65802EA41AB988F800E40510 /* BigGear.swift */,
 				654E94241ABAC1CE007CDCD8 /* ShadowView.swift */,
+				65188E071AD00D5E0015488E /* GearRefreshControl.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				65802EA51AB988F800E40510 /* BigGear.swift in Sources */,
 				65802E841AB9677200E40510 /* ViewController.swift in Sources */,
 				65802E821AB9677200E40510 /* AppDelegate.swift in Sources */,
+				65188E081AD00D5E0015488E /* GearRefreshControl.swift in Sources */,
 				654E94251ABAC1CE007CDCD8 /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
