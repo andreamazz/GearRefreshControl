@@ -17,7 +17,7 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCellWithIdentifier("Cell")! as UITableViewCell
+        return tableView.dequeueReusableCellWithIdentifier("Cell")! as! UITableViewCell
     }
 
     override func viewDidLoad() {
