@@ -2,7 +2,33 @@
 A custom animation for the UIRefreshControl. Inspired by this [Dribble shot](https://dribbble.com/shots/1974767-gear-powered-pull-to-refresh-animation?list=animated&sort=popular&timeframe=now&offset=19) and [this tutorial](http://www.jackrabbitmobile.com/design/ios-custom-pull-to-refresh-control/). 
 
 # Usage
-Right now it's just a demo, I might make a library out of it, but I don't see the point right now, let me know in the Issue section if you are interested. 
+Install through [Cocoapods](http://cocoapods.org)
+```
+pod 'GearRefreshControl', '~> 0.1'
+
+use_frameworks!
+```
+Setup your `refreshControl`:
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    gearRefreshControl = GearRefreshControl(frame: self.view.bounds)
+    gearRefreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
+    self.refreshControl = gearRefreshControl
+}
+```
+Update state:
+```swift
+override func scrollViewDidScroll(scrollView: UIScrollView) {
+    gearRefreshControl.scrollViewDidScroll(scrollView)
+}
+```
+Stop the animation on completion:
+```swift
+self.gearRefreshControl.endRefreshing()
+```
+
+Checkout the sample project for the full implementation.
 
 # Screenshot
 ![GearRefreshControl](https://raw.githubusercontent.com/andreamazz/GearRefreshControl/master/assets/screenshot.gif)
