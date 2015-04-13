@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65188E081AD00D5E0015488E /* GearRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65188E071AD00D5E0015488E /* GearRefreshControl.swift */; };
-		654E94251ABAC1CE007CDCD8 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E94241ABAC1CE007CDCD8 /* ShadowView.swift */; };
 		65802E821AB9677200E40510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E811AB9677200E40510 /* AppDelegate.swift */; };
 		65802E841AB9677200E40510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E831AB9677200E40510 /* ViewController.swift */; };
 		65802E871AB9677200E40510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65802E851AB9677200E40510 /* Main.storyboard */; };
 		65802E891AB9677200E40510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65802E881AB9677200E40510 /* Images.xcassets */; };
 		65802E8C1AB9677200E40510 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65802E8A1AB9677200E40510 /* LaunchScreen.xib */; };
 		65802E981AB9677300E40510 /* GearAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E971AB9677300E40510 /* GearAnimationTests.swift */; };
-		65802EA31AB97EFE00E40510 /* MainGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802EA21AB97EFE00E40510 /* MainGear.swift */; };
-		65802EA51AB988F800E40510 /* BigGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802EA41AB988F800E40510 /* BigGear.swift */; };
+		F901F8A857701F57A8247924 /* Pods_GearAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97289C10DDE158AC35FFD58 /* Pods_GearAnimation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		65188E071AD00D5E0015488E /* GearRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearRefreshControl.swift; sourceTree = "<group>"; };
-		654E94241ABAC1CE007CDCD8 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		65802E7C1AB9677200E40510 /* GearAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GearAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65802E801AB9677200E40510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65802E811AB9677200E40510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +37,9 @@
 		65802E911AB9677300E40510 /* GearAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65802E961AB9677300E40510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65802E971AB9677300E40510 /* GearAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearAnimationTests.swift; sourceTree = "<group>"; };
-		65802EA21AB97EFE00E40510 /* MainGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGear.swift; sourceTree = "<group>"; };
-		65802EA41AB988F800E40510 /* BigGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigGear.swift; sourceTree = "<group>"; };
+		6C14DB25C352A54229DBB815 /* Pods-GearAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GearAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		C97289C10DDE158AC35FFD58 /* Pods_GearAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GearAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E9042ECCE1C9AF0ECDBFE2 /* Pods-GearAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GearAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F901F8A857701F57A8247924 /* Pods_GearAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49A586F2D5A0E822391F4D40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C14DB25C352A54229DBB815 /* Pods-GearAnimation.debug.xcconfig */,
+				D0E9042ECCE1C9AF0ECDBFE2 /* Pods-GearAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		559D1011EA89A72CC0A97548 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C97289C10DDE158AC35FFD58 /* Pods_GearAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		65802E731AB9677200E40510 = {
 			isa = PBXGroup;
 			children = (
 				65802E7E1AB9677200E40510 /* GearAnimation */,
 				65802E941AB9677300E40510 /* GearAnimationTests */,
 				65802E7D1AB9677200E40510 /* Products */,
+				49A586F2D5A0E822391F4D40 /* Pods */,
+				559D1011EA89A72CC0A97548 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +101,6 @@
 		65802E7E1AB9677200E40510 /* GearAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				65802EA11AB97EF000E40510 /* Views */,
 				65802E811AB9677200E40510 /* AppDelegate.swift */,
 				65802E831AB9677200E40510 /* ViewController.swift */,
 				65802E851AB9677200E40510 /* Main.storyboard */,
@@ -121,17 +136,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		65802EA11AB97EF000E40510 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				65802EA21AB97EFE00E40510 /* MainGear.swift */,
-				65802EA41AB988F800E40510 /* BigGear.swift */,
-				654E94241ABAC1CE007CDCD8 /* ShadowView.swift */,
-				65188E071AD00D5E0015488E /* GearRefreshControl.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65802E9B1AB9677300E40510 /* Build configuration list for PBXNativeTarget "GearAnimation" */;
 			buildPhases = (
+				615DF1B52E3D16C2C49FCAC4 /* Check Pods Manifest.lock */,
 				65802E781AB9677200E40510 /* Sources */,
 				65802E791AB9677200E40510 /* Frameworks */,
 				65802E7A1AB9677200E40510 /* Resources */,
+				8F0256F820F7D79C923A763E /* Embed Pods Frameworks */,
+				E3FB4B11E55C18FC8CDA381C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,17 +234,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		615DF1B52E3D16C2C49FCAC4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0256F820F7D79C923A763E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3FB4B11E55C18FC8CDA381C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65802E781AB9677200E40510 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65802EA31AB97EFE00E40510 /* MainGear.swift in Sources */,
-				65802EA51AB988F800E40510 /* BigGear.swift in Sources */,
 				65802E841AB9677200E40510 /* ViewController.swift in Sources */,
 				65802E821AB9677200E40510 /* AppDelegate.swift in Sources */,
-				65188E081AD00D5E0015488E /* GearRefreshControl.swift in Sources */,
-				654E94251ABAC1CE007CDCD8 /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +409,7 @@
 		};
 		65802E9C1AB9677300E40510 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C14DB25C352A54229DBB815 /* Pods-GearAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GearAnimation/Info.plist;
@@ -368,6 +420,7 @@
 		};
 		65802E9D1AB9677300E40510 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E9042ECCE1C9AF0ECDBFE2 /* Pods-GearAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GearAnimation/Info.plist;

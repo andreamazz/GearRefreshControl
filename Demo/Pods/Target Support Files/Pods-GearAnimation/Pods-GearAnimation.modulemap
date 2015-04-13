@@ -1,0 +1,6 @@
+framework module Pods_GearAnimation {
+  umbrella header "Pods-GearAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

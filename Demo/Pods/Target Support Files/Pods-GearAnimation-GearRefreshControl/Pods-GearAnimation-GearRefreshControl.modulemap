@@ -1,0 +1,6 @@
+framework module GearRefreshControl {
+  umbrella header "Pods-GearAnimation-GearRefreshControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
