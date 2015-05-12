@@ -1,4 +1,9 @@
-# GearRefreshControl
+<p align="center">
+  <img src="assets/logo.png"/>
+</p>
+
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/GearRefreshControl/badge.svg)](http://cocoapods.org/?q=gearrefreshcontrol)
+
 A custom animation for the UIRefreshControl. Inspired by this [Dribble shot](https://dribbble.com/shots/1974767-gear-powered-pull-to-refresh-animation?list=animated&sort=popular&timeframe=now&offset=19) and [this tutorial](http://www.jackrabbitmobile.com/design/ios-custom-pull-to-refresh-control/). 
 
 # Usage
