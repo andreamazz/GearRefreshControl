@@ -16,7 +16,7 @@ public class GearRefreshControl: UIRefreshControl {
     /**
     Tells if the control is currently animating
     */
-    var isRefreshControlAnimating = false
+    public var isRefreshControlAnimating = false
 
     private var refreshContainerView: UIView!
     private var overlayView: UIView!
@@ -51,61 +51,6 @@ public class GearRefreshControl: UIRefreshControl {
     }
 
     /**
-    Setup the refresh control
-    
-    Call this function to setup the views of the refresh control
-    */
-    public func setupRefreshControl() {
-        
-        refreshContainerView = UIView(frame: self.bounds)
-        refreshContainerView.backgroundColor = UIColor(red:0.13, green:0.29, blue:0.55, alpha:1)
-        
-        overlayView = UIView(frame: self.bounds)
-        overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
-        
-        shadowView = ShadowView(frame: self.bounds)
-        shadowView.shadowPercentage = 0.2
-        
-        centerGear = MainGear(frame: CGRectMake(0, 0, 48, 48))
-        centerGear.backgroundColor = UIColor.clearColor()
-        centerGear.tintColor = UIColor(red:0.36, green:0.52, blue:0.92, alpha:1)
-        centerGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame), y: CGRectGetMidY(self.refreshContainerView.frame))
-        
-        topGear = BigGear(frame: CGRectMake(0, 0, 92, 92))
-        topGear.backgroundColor = UIColor.clearColor()
-        topGear.tintColor = UIColor(red:0.31, green:0.47, blue:0.84, alpha:1)
-        topGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 48, y: CGRectGetMidY(self.refreshContainerView.frame) - 49)
-        
-        rightGear = BigGear(frame: CGRectMake(0, 0, 92, 92))
-        rightGear.backgroundColor = UIColor.clearColor()
-        rightGear.tintColor = UIColor(red:0.23, green:0.41, blue:0.76, alpha:1)
-        rightGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 120, y: CGRectGetMidY(self.refreshContainerView.frame))
-        
-        bottomGear = BigGear(frame: CGRectMake(0, 0, 88, 88))
-        bottomGear.backgroundColor = UIColor.clearColor()
-        bottomGear.tintColor = UIColor(red:0.31, green:0.47, blue:0.84, alpha:1)
-        bottomGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 48, y: CGRectGetMidY(self.refreshContainerView.frame) + 42)
-        
-        leftGear = BigGear(frame: CGRectMake(0, 0, 92, 92))
-        leftGear.backgroundColor = UIColor.clearColor()
-        leftGear.tintColor = UIColor(red:0.23, green:0.41, blue:0.76, alpha:1)
-        leftGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 110, y: CGRectGetMidY(self.refreshContainerView.frame) - 18)
-        
-        refreshContainerView.addSubview(self.topGear)
-        refreshContainerView.addSubview(self.rightGear)
-        refreshContainerView.addSubview(self.bottomGear)
-        refreshContainerView.addSubview(self.leftGear)
-        refreshContainerView.addSubview(self.centerGear)
-        refreshContainerView.addSubview(self.shadowView)
-        refreshContainerView.addSubview(self.overlayView)
-        
-        refreshContainerView.clipsToBounds = true
-        tintColor = UIColor.clearColor()
-        
-        addSubview(self.refreshContainerView)
-    }
-
-    /**
     Scroll update
     
     Updates the scroll status of the gears.
@@ -114,7 +59,7 @@ public class GearRefreshControl: UIRefreshControl {
     */
     public func scrollViewDidScroll(scrollView: UIScrollView) {
         var refreshBounds = self.bounds;
-        
+
         // Distance the table has been pulled
         var pullDistance = max(0.0, -self.frame.origin.y);
         var pullRatio = min(max(pullDistance, 0.0), 140.0) / 140.0;
@@ -149,6 +94,56 @@ public class GearRefreshControl: UIRefreshControl {
 }
 
 private extension GearRefreshControl {
+    func setupRefreshControl() {
+
+        refreshContainerView = UIView(frame: self.bounds)
+        refreshContainerView.backgroundColor = UIColor(red:0.13, green:0.29, blue:0.55, alpha:1)
+
+        overlayView = UIView(frame: self.bounds)
+        overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
+
+        shadowView = ShadowView(frame: self.bounds)
+        shadowView.shadowPercentage = 0.2
+
+        centerGear = MainGear(frame: CGRectMake(0, 0, 48, 48))
+        centerGear.backgroundColor = .clearColor()
+        centerGear.tintColor = UIColor(red:0.36, green:0.52, blue:0.92, alpha:1)
+        centerGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame), y: CGRectGetMidY(self.refreshContainerView.frame))
+
+        topGear = BigGear(frame: CGRectMake(0, 0, 92, 92))
+        topGear.backgroundColor = UIColor.clearColor()
+        topGear.tintColor = UIColor(red:0.31, green:0.47, blue:0.84, alpha:1)
+        topGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 48, y: CGRectGetMidY(self.refreshContainerView.frame) - 49)
+
+        rightGear = BigGear(frame: CGRectMake(0, 0, 92, 92))
+        rightGear.backgroundColor = UIColor.clearColor()
+        rightGear.tintColor = UIColor(red:0.23, green:0.41, blue:0.76, alpha:1)
+        rightGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 120, y: CGRectGetMidY(self.refreshContainerView.frame))
+
+        bottomGear = BigGear(frame: CGRectMake(0, 0, 88, 88))
+        bottomGear.backgroundColor = UIColor.clearColor()
+        bottomGear.tintColor = UIColor(red:0.31, green:0.47, blue:0.84, alpha:1)
+        bottomGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 48, y: CGRectGetMidY(self.refreshContainerView.frame) + 42)
+
+        leftGear = BigGear(frame: CGRectMake(0, 0, 92, 92))
+        leftGear.backgroundColor = UIColor.clearColor()
+        leftGear.tintColor = UIColor(red:0.23, green:0.41, blue:0.76, alpha:1)
+        leftGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 110, y: CGRectGetMidY(self.refreshContainerView.frame) - 18)
+
+        refreshContainerView.addSubview(self.topGear)
+        refreshContainerView.addSubview(self.rightGear)
+        refreshContainerView.addSubview(self.bottomGear)
+        refreshContainerView.addSubview(self.leftGear)
+        refreshContainerView.addSubview(self.centerGear)
+        refreshContainerView.addSubview(self.shadowView)
+        refreshContainerView.addSubview(self.overlayView)
+
+        refreshContainerView.clipsToBounds = true
+        tintColor = UIColor.clearColor()
+
+        addSubview(self.refreshContainerView)
+    }
+
     func animateRefreshView() {
         isRefreshControlAnimating = true
         
