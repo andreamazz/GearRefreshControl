@@ -8,8 +8,14 @@
 
 import UIKit
 
+/**
+Defines a custom UIRefreshControl with spiining gears.
+*/
 public class GearRefreshControl: UIRefreshControl {
-    
+
+    /**
+    Tells if the control is currently animating
+    */
     var isRefreshControlAnimating = false
 
     private var refreshContainerView: UIView!
@@ -20,21 +26,35 @@ public class GearRefreshControl: UIRefreshControl {
     private var rightGear: BigGear!
     private var bottomGear: BigGear!
     private var leftGear: BigGear!
-    
+
+    /**
+    Use init(frame:) instead
+    */
     required override public init() {
         fatalError("use init(frame:) instead")
     }
 
+    /**
+    Use init(frame:) instead
+    */
     required public init(coder aDecoder: NSCoder) {
         fatalError("use init(frame:) instead")
     }
-    
+
+    /**
+    Initialize the gear refresh control
+    */
     required override public init(frame: CGRect) {
         super.init()
         bounds.size.width = frame.size.width
         setupRefreshControl()
     }
+
+    /**
+    Setup the refresh control
     
+    Call this function to setup the views of the refresh control
+    */
     public func setupRefreshControl() {
         
         refreshContainerView = UIView(frame: self.bounds)
@@ -84,7 +104,14 @@ public class GearRefreshControl: UIRefreshControl {
         
         addSubview(self.refreshContainerView)
     }
+
+    /**
+    Scroll update
     
+    Updates the scroll status of the gears.
+
+    :param: scrollView The scrollview being observed
+    */
     public func scrollViewDidScroll(scrollView: UIScrollView) {
         var refreshBounds = self.bounds;
         
@@ -118,8 +145,11 @@ public class GearRefreshControl: UIRefreshControl {
             animateRefreshView()
         }
     }
-    
-    private func animateRefreshView() {
+
+}
+
+private extension GearRefreshControl {
+    func animateRefreshView() {
         isRefreshControlAnimating = true
         
         UIView.animateWithDuration(0.3, delay: 0, options: .CurveLinear, animations: {
