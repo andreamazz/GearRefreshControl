@@ -6,6 +6,9 @@
 
 A custom animation for the UIRefreshControl. Inspired by this [Dribble shot](https://dribbble.com/shots/1974767-gear-powered-pull-to-refresh-animation?list=animated&sort=popular&timeframe=now&offset=19) and [this tutorial](http://www.jackrabbitmobile.com/design/ios-custom-pull-to-refresh-control/). 
 
+# Screenshot
+![GearRefreshControl](https://raw.githubusercontent.com/andreamazz/GearRefreshControl/master/assets/screenshot.gif)
+
 # Usage
 Install through [Cocoapods](http://cocoapods.org)
 ```
@@ -34,9 +37,6 @@ self.gearRefreshControl.endRefreshing()
 ```
 
 Checkout the sample project for the full implementation.
-
-# Screenshot
-![GearRefreshControl](https://raw.githubusercontent.com/andreamazz/GearRefreshControl/master/assets/screenshot.gif)
 
 #MIT License
 
