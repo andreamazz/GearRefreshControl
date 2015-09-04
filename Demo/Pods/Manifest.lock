@@ -1,5 +1,5 @@
 PODS:
-  - GearRefreshControl (0.0.1)
+  - GearRefreshControl (0.1)
 
 DEPENDENCIES:
   - GearRefreshControl (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GearRefreshControl: 9a4ef5bd28190f827499ab4585a9372b16e57f86
+  GearRefreshControl: c9c3531449560152f2834579fb059615db24a77f
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.38.2
