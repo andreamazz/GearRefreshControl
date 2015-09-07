@@ -11,12 +11,15 @@ A custom animation for the UIRefreshControl. Inspired by this [Dribble shot](htt
 
 # Usage
 Install through [Cocoapods](http://cocoapods.org)
+
 ```
 pod 'GearRefreshControl', '~> 0.1'
 
 use_frameworks!
 ```
+
 Setup your `refreshControl`:
+
 ```swift
 override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,18 +28,32 @@ override func viewDidLoad() {
     self.refreshControl = gearRefreshControl
 }
 ```
+
 Update state:
+
 ```swift
 override func scrollViewDidScroll(scrollView: UIScrollView) {
     gearRefreshControl.scrollViewDidScroll(scrollView)
 }
 ```
+
 Stop the animation on completion:
 ```swift
 self.gearRefreshControl.endRefreshing()
 ```
 
+##Customization
+
+You can customize the color of the control by setting the `gearTintColor` property:
+
+```swift
+gearRefreshControl.gearTintColor = .redColor()
+```
+
 Checkout the sample project for the full implementation.
+
+#Author
+[Andrea Mazzini](https://twitter.com/theandreamazz)
 
 #MIT License
 
