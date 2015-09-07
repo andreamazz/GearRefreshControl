@@ -18,6 +18,21 @@ public class GearRefreshControl: UIRefreshControl {
     */
     public private(set) var isRefreshControlAnimating = false
 
+    /**
+    Tint color for the control. Set the color of the main gear, the other ones are computed automatically
+    */
+    dynamic public var gearTintColor: UIColor? {
+        get { return self.centerGear.tintColor }
+        set {
+            centerGear.tintColor = newValue
+            topGear.tintColor = newValue?.darkerColor(0.85)
+            rightGear.tintColor = newValue?.darkerColor(0.75)
+            bottomGear.tintColor = newValue?.darkerColor(0.85)
+            leftGear.tintColor = newValue?.darkerColor(0.75)
+            refreshContainerView.backgroundColor = newValue?.darkerColor(0.5)
+        }
+    }
+
     private var refreshContainerView: UIView!
     private var overlayView: UIView!
     private var shadowView: ShadowView = {
@@ -27,26 +42,31 @@ public class GearRefreshControl: UIRefreshControl {
         }()
     private var centerGear: MainGear = {
         let view = MainGear()
+        view.frame = CGRectMake(0, 0, 48, 48)
         view.backgroundColor = .clearColor()
         return view
         }()
     private var topGear: BigGear = { // cue Jessica from the Allman brothers
         let view = BigGear()
+        view.frame = CGRectMake(0, 0, 92, 92)
         view.backgroundColor = .clearColor()
         return view
         }()
     private var rightGear: BigGear = {
         let view = BigGear()
+        view.frame = CGRectMake(0, 0, 92, 92)
         view.backgroundColor = .clearColor()
         return view
         }()
     private var bottomGear: BigGear = {
         let view = BigGear()
+        view.frame = CGRectMake(0, 0, 88, 88)
         view.backgroundColor = .clearColor()
         return view
         }()
     private var leftGear: BigGear = {
         let view = BigGear()
+        view.frame = CGRectMake(0, 0, 92, 92)
         view.backgroundColor = .clearColor()
         return view
         }()
@@ -121,31 +141,18 @@ private extension GearRefreshControl {
     func setupRefreshControl() {
 
         refreshContainerView = UIView(frame: self.bounds)
-        refreshContainerView.backgroundColor = UIColor(red:0.13, green:0.29, blue:0.55, alpha:1)
 
         overlayView = UIView(frame: self.bounds)
         overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
 
         shadowView.frame = self.bounds
 
-        centerGear.frame = CGRectMake(0, 0, 48, 48)
-        centerGear.tintColor = UIColor(red:0.36, green:0.52, blue:0.92, alpha:1)
+        gearTintColor = UIColor(red:0.36, green:0.52, blue:0.92, alpha:1)
+
         centerGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame), y: CGRectGetMidY(self.refreshContainerView.frame))
-
-        topGear.frame = CGRectMake(0, 0, 92, 92)
-        topGear.tintColor = UIColor(red:0.31, green:0.47, blue:0.84, alpha:1)
         topGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 48, y: CGRectGetMidY(self.refreshContainerView.frame) - 49)
-
-        rightGear.frame = CGRectMake(0, 0, 92, 92)
-        rightGear.tintColor = UIColor(red:0.23, green:0.41, blue:0.76, alpha:1)
         rightGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 120, y: CGRectGetMidY(self.refreshContainerView.frame))
-
-        bottomGear.frame = CGRectMake(0, 0, 88, 88)
-        bottomGear.tintColor = UIColor(red:0.31, green:0.47, blue:0.84, alpha:1)
         bottomGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 48, y: CGRectGetMidY(self.refreshContainerView.frame) + 42)
-
-        leftGear.frame = CGRectMake(0, 0, 92, 92)
-        leftGear.tintColor = UIColor(red:0.23, green:0.41, blue:0.76, alpha:1)
         leftGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 110, y: CGRectGetMidY(self.refreshContainerView.frame) - 18)
 
         [topGear, rightGear, bottomGear, leftGear, centerGear, shadowView, overlayView].map { self.refreshContainerView.addSubview($0) }
@@ -195,5 +202,16 @@ private class ShadowView: UIView {
                 UIColor.clearColor().CGColor]
             self.layer.insertSublayer(self.gradient, atIndex:0)
         }
+    }
+}
+
+private extension UIColor {
+    func darkerColor(delta: CGFloat) -> UIColor {
+        var h = CGFloat(0)
+        var s = CGFloat(0)
+        var b = CGFloat(0)
+        var a = CGFloat(0)
+        self.getHue(&h, saturation: &s, brightness: &b, alpha: &a)
+        return UIColor(hue: h, saturation: s, brightness: b * delta, alpha: a)
     }
 }
