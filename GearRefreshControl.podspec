@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'GearRefreshControl'
-  s.version = '0.1'
+  s.version = '0.2'
   s.license = 'MIT'
   s.summary = 'A custom animation for the UIRefreshControl'
   s.homepage = 'https://github.com/andreamazz/GearRefreshControl'
