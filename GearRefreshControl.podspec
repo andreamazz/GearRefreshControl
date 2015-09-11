@@ -1,8 +1,11 @@
 Pod::Spec.new do |s|
   s.name = 'GearRefreshControl'
-  s.version = '0.2'
+  s.version = '0.2.1'
   s.license = 'MIT'
   s.summary = 'A custom animation for the UIRefreshControl'
+  s.description  = <<-DESC
+                    Provides a custom UIRefreshControl animating a series of cogs
+                   DESC
   s.homepage = 'https://github.com/andreamazz/GearRefreshControl'
   s.social_media_url = 'https://twitter.com/theandreamazz'
   s.authors = { 'Andrea Mazzini' => 'andrea.mazzini@gmail.com' }
