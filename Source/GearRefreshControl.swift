@@ -119,7 +119,7 @@ public class GearRefreshControl: UIRefreshControl {
 
         refreshBounds.size.height = pullDistance;
 
-        [self.refreshContainerView, self.overlayView].map({$0.frame = refreshBounds});
+        _ = [self.refreshContainerView, self.overlayView].map({$0.frame = refreshBounds});
 
         // Don't rotate the gears if the refresh animation is playing
         if (!refreshing && !isRefreshControlAnimating) {
@@ -156,7 +156,7 @@ private extension GearRefreshControl {
         bottomGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 48, y: CGRectGetMidY(self.refreshContainerView.frame) + 42)
         leftGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 110, y: CGRectGetMidY(self.refreshContainerView.frame) - 18)
 
-        [topGear, rightGear, bottomGear, leftGear, centerGear, shadowView, overlayView].map { self.refreshContainerView.addSubview($0) }
+        _ = [topGear, rightGear, bottomGear, leftGear, centerGear, shadowView, overlayView].map { self.refreshContainerView.addSubview($0) }
 
         refreshContainerView.clipsToBounds = true
         tintColor = UIColor.clearColor()
@@ -202,7 +202,7 @@ private class ShadowView: UIView {
                 UIColor.blackColor().colorWithAlphaComponent(0.15).CGColor,
                 UIColor.clearColor().CGColor]
             self.layer.insertSublayer(self.gradient, atIndex:0)
-        }else{
+        } else {
             gradient.frame = frame
         }
     }

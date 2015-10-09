@@ -5,7 +5,7 @@ public class BigGear: UIView {
 
         let bigGear: CGRect = CGRectMake(rect.minX, rect.minY, rect.width - 0.03, rect.height)
 
-        var rectangle14Path = UIBezierPath()
+        let rectangle14Path = UIBezierPath()
         rectangle14Path.moveToPoint(CGPointMake(bigGear.minX + 0.54057 * bigGear.width, bigGear.minY + 0.08763 * bigGear.height))
         rectangle14Path.addLineToPoint(CGPointMake(bigGear.minX + 0.52246 * bigGear.width, bigGear.minY + 0.00000 * bigGear.height))
         rectangle14Path.addLineToPoint(CGPointMake(bigGear.minX + 0.47754 * bigGear.width, bigGear.minY + 0.00000 * bigGear.height))

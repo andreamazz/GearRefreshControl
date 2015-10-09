@@ -18,7 +18,7 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCellWithIdentifier("Cell")! as! UITableViewCell
+        return tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
     }
 
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class ViewController: UITableViewController {
     }
 
     func refresh(){
-        var popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)));
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)));
         dispatch_after(popTime, dispatch_get_main_queue()) { () -> Void in
             self.gearRefreshControl.endRefreshing()
         }

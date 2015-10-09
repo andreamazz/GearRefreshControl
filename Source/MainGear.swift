@@ -5,7 +5,7 @@ public class MainGear : UIView {
 
         let centerGear: CGRect = CGRectMake(rect.minX, rect.minY, rect.width + 0.42, rect.height)
 
-        var rectangle1Path = UIBezierPath()
+        let rectangle1Path = UIBezierPath()
         rectangle1Path.moveToPoint(CGPointMake(centerGear.minX + 0.58954 * centerGear.width, centerGear.minY + 0.11232 * centerGear.height))
         rectangle1Path.addLineToPoint(CGPointMake(centerGear.minX + 0.56841 * centerGear.width, centerGear.minY + 0.00000 * centerGear.height))
         rectangle1Path.addLineToPoint(CGPointMake(centerGear.minX + 0.42589 * centerGear.width, centerGear.minY + 0.00000 * centerGear.height))
