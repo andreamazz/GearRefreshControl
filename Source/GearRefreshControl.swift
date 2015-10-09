@@ -105,10 +105,11 @@ public class GearRefreshControl: UIRefreshControl {
         var refreshBounds = self.bounds;
 
         // Distance the table has been pulled
-        var pullDistance = max(0.0, -self.frame.origin.y);
-        var pullRatio = min(max(pullDistance, 0.0), 140.0) / 140.0;
+        let pullDistance = max(0.0, -self.frame.origin.y);
+        let pullRatio = min(max(pullDistance, 0.0), 140.0) / 140.0;
 
         overlayView.alpha = 1 - pullRatio
+        shadowView.frame = self.bounds
 
         centerGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame), y: pullDistance / 2)
         topGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 48, y: pullDistance / 2 - 49)
@@ -190,17 +191,19 @@ private class ShadowView: UIView {
 
     override func layoutSubviews() {
         clipsToBounds = true
+        var frame = self.frame
+        let offset = frame.size.height * CGFloat(shadowPercentage)
+        frame.size.height = offset
         if (gradient == nil) {
             gradient = CAGradientLayer()
-            var frame = self.frame
-            let offset = frame.size.height * CGFloat(shadowPercentage)
-            frame.size.height = offset
             gradient.frame = frame
             gradient.colors = [
                 UIColor.blackColor().colorWithAlphaComponent(0.6).CGColor,
                 UIColor.blackColor().colorWithAlphaComponent(0.15).CGColor,
                 UIColor.clearColor().CGColor]
             self.layer.insertSublayer(self.gradient, atIndex:0)
+        }else{
+            gradient.frame = frame
         }
     }
 }
