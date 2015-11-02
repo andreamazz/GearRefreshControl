@@ -9,7 +9,7 @@
 import UIKit
 
 /**
-Defines a custom UIRefreshControl with spiining gears.
+Defines a custom `UIRefreshControl` with spinning gears.
 */
 public class GearRefreshControl: UIRefreshControl {
 
@@ -99,7 +99,7 @@ public class GearRefreshControl: UIRefreshControl {
 
     Updates the scroll status of the gears.
 
-    :param: scrollView The scrollview being observed
+    - Parameter scrollView: The scrollview being observed
     */
     public func scrollViewDidScroll(scrollView: UIScrollView) {
         var refreshBounds = self.bounds;

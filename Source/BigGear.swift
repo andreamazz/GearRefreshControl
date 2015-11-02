@@ -1,5 +1,12 @@
+/**
+ Defines a big gear as a Bezier path
+ */
 public class BigGear: UIView {
 
+    /**
+     Draws the gear in the given rect
+     - Parameter rect: the rect drawn
+     */
     override public func drawRect(rect: CGRect) {
         let color0 = self.tintColor
 

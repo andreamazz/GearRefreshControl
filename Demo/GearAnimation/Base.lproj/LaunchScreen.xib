@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,25 +11,28 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="91V-ZU-Kjx">
-                    <rect key="frame" x="120" y="120" width="240" height="240"/>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axb-eP-Xxk">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="64"/>
+                    <animations/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="240" id="3Mk-8c-S6l"/>
-                        <constraint firstAttribute="height" constant="240" id="bYF-9T-I4O"/>
+                        <constraint firstAttribute="height" constant="64" id="uep-kR-wcf"/>
                     </constraints>
-                </imageView>
+                    <color key="barTintColor" red="0.1960784314" green="0.4823529412" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <navigationItem id="3rt-hQ-Vkt"/>
+                    </items>
+                </navigationBar>
             </subviews>
-            <color key="backgroundColor" red="0.99607843137254903" green="0.76470588235294112" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="91V-ZU-Kjx" secondAttribute="centerY" id="JGn-oy-mC1"/>
-                <constraint firstAttribute="centerX" secondItem="91V-ZU-Kjx" secondAttribute="centerX" id="JOY-Yv-TXQ"/>
+                <constraint firstItem="Axb-eP-Xxk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GSo-PI-xhl"/>
+                <constraint firstItem="Axb-eP-Xxk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dgj-e3-xlt"/>
+                <constraint firstAttribute="trailing" secondItem="Axb-eP-Xxk" secondAttribute="trailing" id="qU2-iO-tiD"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
-    <resources>
-        <image name="logo" width="240" height="240"/>
-    </resources>
 </document>

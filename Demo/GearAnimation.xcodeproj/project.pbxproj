@@ -78,6 +78,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6568D6821BE80D7400A9E37C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65802E851AB9677200E40510 /* Main.storyboard */,
+				65802E881AB9677200E40510 /* Images.xcassets */,
+				65802E8A1AB9677200E40510 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		65802E731AB9677200E40510 = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +111,9 @@
 		65802E7E1AB9677200E40510 /* GearAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				6568D6821BE80D7400A9E37C /* Resources */,
 				65802E811AB9677200E40510 /* AppDelegate.swift */,
 				65802E831AB9677200E40510 /* ViewController.swift */,
-				65802E851AB9677200E40510 /* Main.storyboard */,
-				65802E881AB9677200E40510 /* Images.xcassets */,
-				65802E8A1AB9677200E40510 /* LaunchScreen.xib */,
 				65802E7F1AB9677200E40510 /* Supporting Files */,
 			);
 			path = GearAnimation;
