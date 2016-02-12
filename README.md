@@ -2,7 +2,7 @@
   <img width="420" height="240" src="assets/logo.png"/>
 </p>
 
-[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/GearRefreshControl/badge.svg)](http://cocoapods.org/?q=gearrefreshcontrol)
+[![CocoaPods](https://cocoapod-badges.herokuapp.com/v/GearRefreshControl/badge.svg)](http://cocoapods.org/?q=gearrefreshcontrol)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![Swift 2.0](https://img.shields.io/badge/swift-2.0-orange.svg)
 
@@ -18,7 +18,7 @@ A custom animation for the UIRefreshControl. Inspired by this [Dribble shot](htt
 ![GearRefreshControl](https://raw.githubusercontent.com/andreamazz/GearRefreshControl/master/assets/screenshot.gif)
 
 # Usage
-Install through [Cocoapods](http://cocoapods.org)
+Install through [CocoaPods](http://cocoapods.org)
 
 ```
 pod 'GearRefreshControl', '~> 0.2'
