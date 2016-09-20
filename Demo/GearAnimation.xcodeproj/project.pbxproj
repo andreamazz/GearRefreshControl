@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0144533E421790DFB80B0FFE /* Pods_GearAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062CC50673F66E949CED1F2F /* Pods_GearAnimationTests.framework */; };
 		65802E821AB9677200E40510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E811AB9677200E40510 /* AppDelegate.swift */; };
 		65802E841AB9677200E40510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E831AB9677200E40510 /* ViewController.swift */; };
 		65802E871AB9677200E40510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65802E851AB9677200E40510 /* Main.storyboard */; };
 		65802E891AB9677200E40510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65802E881AB9677200E40510 /* Images.xcassets */; };
 		65802E8C1AB9677200E40510 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65802E8A1AB9677200E40510 /* LaunchScreen.xib */; };
 		65802E981AB9677300E40510 /* GearAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65802E971AB9677300E40510 /* GearAnimationTests.swift */; };
-		F901F8A857701F57A8247924 /* Pods_GearAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97289C10DDE158AC35FFD58 /* Pods_GearAnimation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BE4706215BF3B6C2AE0CF607 /* Pods_GearAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BF6C1061A212428BBBBF26 /* Pods_GearAnimation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062CC50673F66E949CED1F2F /* Pods_GearAnimationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GearAnimationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19BF6C1061A212428BBBBF26 /* Pods_GearAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GearAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		211EB9BA1ECE2F16EA952C42 /* Pods-GearAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GearAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		2747D084E3EE480347508A5A /* Pods-GearAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GearAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GearAnimationTests/Pods-GearAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
 		65802E7C1AB9677200E40510 /* GearAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GearAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65802E801AB9677200E40510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65802E811AB9677200E40510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +42,8 @@
 		65802E911AB9677300E40510 /* GearAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65802E961AB9677300E40510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65802E971AB9677300E40510 /* GearAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearAnimationTests.swift; sourceTree = "<group>"; };
-		6C14DB25C352A54229DBB815 /* Pods-GearAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GearAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation.debug.xcconfig"; sourceTree = "<group>"; };
-		C97289C10DDE158AC35FFD58 /* Pods_GearAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GearAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0E9042ECCE1C9AF0ECDBFE2 /* Pods-GearAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GearAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		759CD43038EF4F60FF3C63F7 /* Pods-GearAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GearAnimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GearAnimationTests/Pods-GearAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AA9FED7177DEA85E91FD7BA /* Pods-GearAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GearAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F901F8A857701F57A8247924 /* Pods_GearAnimation.framework in Frameworks */,
+				BE4706215BF3B6C2AE0CF607 /* Pods_GearAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,29 +59,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0144533E421790DFB80B0FFE /* Pods_GearAnimationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49A586F2D5A0E822391F4D40 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6C14DB25C352A54229DBB815 /* Pods-GearAnimation.debug.xcconfig */,
-				D0E9042ECCE1C9AF0ECDBFE2 /* Pods-GearAnimation.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		559D1011EA89A72CC0A97548 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C97289C10DDE158AC35FFD58 /* Pods_GearAnimation.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6568D6821BE80D7400A9E37C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +82,8 @@
 				65802E7E1AB9677200E40510 /* GearAnimation */,
 				65802E941AB9677300E40510 /* GearAnimationTests */,
 				65802E7D1AB9677200E40510 /* Products */,
-				49A586F2D5A0E822391F4D40 /* Pods */,
-				559D1011EA89A72CC0A97548 /* Frameworks */,
+				C0072CCABC284A63A667DCD0 /* Pods */,
+				D7D7770EE663BE7B7143DD68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +132,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C0072CCABC284A63A667DCD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				211EB9BA1ECE2F16EA952C42 /* Pods-GearAnimation.debug.xcconfig */,
+				7AA9FED7177DEA85E91FD7BA /* Pods-GearAnimation.release.xcconfig */,
+				759CD43038EF4F60FF3C63F7 /* Pods-GearAnimationTests.debug.xcconfig */,
+				2747D084E3EE480347508A5A /* Pods-GearAnimationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7D7770EE663BE7B7143DD68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19BF6C1061A212428BBBBF26 /* Pods_GearAnimation.framework */,
+				062CC50673F66E949CED1F2F /* Pods_GearAnimationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,12 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65802E9B1AB9677300E40510 /* Build configuration list for PBXNativeTarget "GearAnimation" */;
 			buildPhases = (
-				615DF1B52E3D16C2C49FCAC4 /* Check Pods Manifest.lock */,
+				403D62A24F72F5C5B640C0B5 /* [CP] Check Pods Manifest.lock */,
 				65802E781AB9677200E40510 /* Sources */,
 				65802E791AB9677200E40510 /* Frameworks */,
 				65802E7A1AB9677200E40510 /* Resources */,
-				8F0256F820F7D79C923A763E /* Embed Pods Frameworks */,
-				E3FB4B11E55C18FC8CDA381C /* Copy Pods Resources */,
+				873FBB99252862C209CC8B0C /* [CP] Embed Pods Frameworks */,
+				C64F0B822D275126C9DC7DAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65802E9E1AB9677300E40510 /* Build configuration list for PBXNativeTarget "GearAnimationTests" */;
 			buildPhases = (
+				85B1A5AE478BDF43CC378419 /* [CP] Check Pods Manifest.lock */,
 				65802E8D1AB9677300E40510 /* Sources */,
 				65802E8E1AB9677300E40510 /* Frameworks */,
 				65802E8F1AB9677300E40510 /* Resources */,
+				5D24446435188D47E21F6EA9 /* [CP] Embed Pods Frameworks */,
+				63248EB8E40DB039FD6B688C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,14 +203,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Fancy Pixel";
 				TargetAttributes = {
 					65802E7B1AB9677200E40510 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 					};
 					65802E901AB9677300E40510 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 65802E7B1AB9677200E40510;
 					};
 				};
@@ -244,29 +257,74 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		615DF1B52E3D16C2C49FCAC4 /* Check Pods Manifest.lock */ = {
+		403D62A24F72F5C5B640C0B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8F0256F820F7D79C923A763E /* Embed Pods Frameworks */ = {
+		5D24446435188D47E21F6EA9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GearAnimationTests/Pods-GearAnimationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63248EB8E40DB039FD6B688C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GearAnimationTests/Pods-GearAnimationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B1A5AE478BDF43CC378419 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		873FBB99252862C209CC8B0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,14 +332,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GearAnimation/Pods-GearAnimation-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E3FB4B11E55C18FC8CDA381C /* Copy Pods Resources */ = {
+		C64F0B822D275126C9DC7DAC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,8 +410,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -362,6 +422,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -395,8 +456,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -404,6 +467,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -413,36 +477,42 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		65802E9C1AB9677300E40510 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C14DB25C352A54229DBB815 /* Pods-GearAnimation.debug.xcconfig */;
+			baseConfigurationReference = 211EB9BA1ECE2F16EA952C42 /* Pods-GearAnimation.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GearAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		65802E9D1AB9677300E40510 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0E9042ECCE1C9AF0ECDBFE2 /* Pods-GearAnimation.release.xcconfig */;
+			baseConfigurationReference = 7AA9FED7177DEA85E91FD7BA /* Pods-GearAnimation.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GearAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		65802E9F1AB9677300E40510 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759CD43038EF4F60FF3C63F7 /* Pods-GearAnimationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -457,12 +527,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GearAnimation.app/GearAnimation";
 			};
 			name = Debug;
 		};
 		65802EA01AB9677300E40510 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2747D084E3EE480347508A5A /* Pods-GearAnimationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -473,6 +545,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.fancypixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GearAnimation.app/GearAnimation";
 			};
 			name = Release;

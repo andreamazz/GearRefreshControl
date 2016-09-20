@@ -11,17 +11,17 @@ import UIKit
 /**
 Defines a custom `UIRefreshControl` with spinning gears.
 */
-public class GearRefreshControl: UIRefreshControl {
+open class GearRefreshControl: UIRefreshControl {
 
     /**
     Tells if the control is currently animating
     */
-    public private(set) var isRefreshControlAnimating = false
+    open fileprivate(set) var isRefreshControlAnimating = false
 
     /**
     Tint color for the control. Set the color of the main gear, the other ones are computed automatically
     */
-    dynamic public var gearTintColor: UIColor? {
+    dynamic open var gearTintColor: UIColor? {
         get { return self.centerGear.tintColor }
         set {
             centerGear.tintColor = newValue
@@ -33,41 +33,41 @@ public class GearRefreshControl: UIRefreshControl {
         }
     }
 
-    private var refreshContainerView: UIView!
-    private var overlayView: UIView!
-    private var shadowView: ShadowView = {
+    fileprivate var refreshContainerView: UIView!
+    fileprivate var overlayView: UIView!
+    fileprivate var shadowView: ShadowView = {
         let view = ShadowView()
         view.shadowPercentage = 0.2
         return view
         }()
-    private var centerGear: MainGear = {
+    fileprivate var centerGear: MainGear = {
         let view = MainGear()
-        view.frame = CGRectMake(0, 0, 48, 48)
-        view.backgroundColor = .clearColor()
+        view.frame = CGRect(x: 0, y: 0, width: 48, height: 48)
+        view.backgroundColor = .clear
         return view
         }()
-    private var topGear: BigGear = { // cue Jessica from the Allman brothers
+    fileprivate var topGear: BigGear = { // cue Jessica from the Allman brothers
         let view = BigGear()
-        view.frame = CGRectMake(0, 0, 92, 92)
-        view.backgroundColor = .clearColor()
+        view.frame = CGRect(x: 0, y: 0, width: 92, height: 92)
+        view.backgroundColor = .clear
         return view
         }()
-    private var rightGear: BigGear = {
+    fileprivate var rightGear: BigGear = {
         let view = BigGear()
-        view.frame = CGRectMake(0, 0, 92, 92)
-        view.backgroundColor = .clearColor()
+        view.frame = CGRect(x: 0, y: 0, width: 92, height: 92)
+        view.backgroundColor = .clear
         return view
         }()
-    private var bottomGear: BigGear = {
+    fileprivate var bottomGear: BigGear = {
         let view = BigGear()
-        view.frame = CGRectMake(0, 0, 88, 88)
-        view.backgroundColor = .clearColor()
+        view.frame = CGRect(x: 0, y: 0, width: 88, height: 88)
+        view.backgroundColor = .clear
         return view
         }()
-    private var leftGear: BigGear = {
+    fileprivate var leftGear: BigGear = {
         let view = BigGear()
-        view.frame = CGRectMake(0, 0, 92, 92)
-        view.backgroundColor = .clearColor()
+        view.frame = CGRect(x: 0, y: 0, width: 92, height: 92)
+        view.backgroundColor = .clear
         return view
         }()
 
@@ -101,7 +101,7 @@ public class GearRefreshControl: UIRefreshControl {
 
     - Parameter scrollView: The scrollview being observed
     */
-    public func scrollViewDidScroll(scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         var refreshBounds = self.bounds;
 
         // Distance the table has been pulled
@@ -111,27 +111,27 @@ public class GearRefreshControl: UIRefreshControl {
         overlayView.alpha = 1 - pullRatio
         shadowView.frame = self.bounds
 
-        centerGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame), y: pullDistance / 2)
-        topGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 48, y: pullDistance / 2 - 49)
-        rightGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 120, y: pullDistance / 2)
-        bottomGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 47, y: pullDistance / 2 + 46)
-        leftGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 105, y: pullDistance / 2 - 17)
+        centerGear.center = CGPoint(x: self.refreshContainerView.frame.midX, y: pullDistance / 2)
+        topGear.center = CGPoint(x: self.refreshContainerView.frame.midX + 48, y: pullDistance / 2 - 49)
+        rightGear.center = CGPoint(x: self.refreshContainerView.frame.midX + 120, y: pullDistance / 2)
+        bottomGear.center = CGPoint(x: self.refreshContainerView.frame.midX - 47, y: pullDistance / 2 + 46)
+        leftGear.center = CGPoint(x: self.refreshContainerView.frame.midX - 105, y: pullDistance / 2 - 17)
 
         refreshBounds.size.height = pullDistance;
 
         _ = [self.refreshContainerView, self.overlayView].map({$0.frame = refreshBounds});
 
         // Don't rotate the gears if the refresh animation is playing
-        if (!refreshing && !isRefreshControlAnimating) {
-            centerGear.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2) * pullRatio)
-            topGear.transform = CGAffineTransformMakeRotation(0.025 - 0.9 * pullRatio)
-            rightGear.transform = CGAffineTransformMakeRotation(-0.03 + 0.9 * pullRatio)
-            bottomGear.transform = CGAffineTransformMakeRotation(0.025 - 0.9 * pullRatio)
-            leftGear.transform = CGAffineTransformMakeRotation(0.025 + 0.9 * pullRatio)
+        if (!isRefreshing && !isRefreshControlAnimating) {
+            centerGear.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2) * pullRatio)
+            topGear.transform = CGAffineTransform(rotationAngle: 0.025 - 0.9 * pullRatio)
+            rightGear.transform = CGAffineTransform(rotationAngle: -0.03 + 0.9 * pullRatio)
+            bottomGear.transform = CGAffineTransform(rotationAngle: 0.025 - 0.9 * pullRatio)
+            leftGear.transform = CGAffineTransform(rotationAngle: 0.025 + 0.9 * pullRatio)
         }
 
         // If we're refreshing and the animation is not playing, then play the animation
-        if (refreshing && !isRefreshControlAnimating) {
+        if (isRefreshing && !isRefreshControlAnimating) {
             animateRefreshView()
         }
     }
@@ -144,22 +144,22 @@ private extension GearRefreshControl {
         refreshContainerView = UIView(frame: self.bounds)
 
         overlayView = UIView(frame: self.bounds)
-        overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
+        overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
 
         shadowView.frame = self.bounds
 
         gearTintColor = UIColor(red:0.36, green:0.52, blue:0.92, alpha:1)
 
-        centerGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame), y: CGRectGetMidY(self.refreshContainerView.frame))
-        topGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 48, y: CGRectGetMidY(self.refreshContainerView.frame) - 49)
-        rightGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) + 120, y: CGRectGetMidY(self.refreshContainerView.frame))
-        bottomGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 48, y: CGRectGetMidY(self.refreshContainerView.frame) + 42)
-        leftGear.center = CGPoint(x: CGRectGetMidX(self.refreshContainerView.frame) - 110, y: CGRectGetMidY(self.refreshContainerView.frame) - 18)
+        centerGear.center = CGPoint(x: self.refreshContainerView.frame.midX, y: self.refreshContainerView.frame.midY)
+        topGear.center = CGPoint(x: self.refreshContainerView.frame.midX + 48, y: self.refreshContainerView.frame.midY - 49)
+        rightGear.center = CGPoint(x: self.refreshContainerView.frame.midX + 120, y: self.refreshContainerView.frame.midY)
+        bottomGear.center = CGPoint(x: self.refreshContainerView.frame.midX - 48, y: self.refreshContainerView.frame.midY + 42)
+        leftGear.center = CGPoint(x: self.refreshContainerView.frame.midX - 110, y: self.refreshContainerView.frame.midY - 18)
 
         _ = [topGear, rightGear, bottomGear, leftGear, centerGear, shadowView, overlayView].map { self.refreshContainerView.addSubview($0) }
 
         refreshContainerView.clipsToBounds = true
-        tintColor = UIColor.clearColor()
+        tintColor = UIColor.clear
 
         addSubview(self.refreshContainerView)
     }
@@ -167,15 +167,15 @@ private extension GearRefreshControl {
     func animateRefreshView() {
         isRefreshControlAnimating = true
 
-        UIView.animateWithDuration(0.3, delay: 0, options: .CurveLinear, animations: {
-            self.centerGear.transform = CGAffineTransformRotate(self.centerGear.transform, CGFloat(M_PI_2))
-            self.topGear.transform = CGAffineTransformRotate(self.topGear.transform, -CGFloat(M_PI_2))
-            self.rightGear.transform = CGAffineTransformRotate(self.rightGear.transform, CGFloat(M_PI_2))
-            self.bottomGear.transform = CGAffineTransformRotate(self.bottomGear.transform, -CGFloat(M_PI_2))
-            self.leftGear.transform = CGAffineTransformRotate(self.leftGear.transform, CGFloat(M_PI_2))
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+            self.centerGear.transform = self.centerGear.transform.rotated(by: CGFloat(M_PI_2))
+            self.topGear.transform = self.topGear.transform.rotated(by: -CGFloat(M_PI_2))
+            self.rightGear.transform = self.rightGear.transform.rotated(by: CGFloat(M_PI_2))
+            self.bottomGear.transform = self.bottomGear.transform.rotated(by: -CGFloat(M_PI_2))
+            self.leftGear.transform = self.leftGear.transform.rotated(by: CGFloat(M_PI_2))
             }, completion: { finished in
                 // If still refreshing, keep spinning
-                if (self.refreshing) {
+                if (self.isRefreshing) {
                     self.animateRefreshView()
                 } else {
                     self.isRefreshControlAnimating = false
@@ -198,10 +198,10 @@ private class ShadowView: UIView {
             gradient = CAGradientLayer()
             gradient.frame = frame
             gradient.colors = [
-                UIColor.blackColor().colorWithAlphaComponent(0.6).CGColor,
-                UIColor.blackColor().colorWithAlphaComponent(0.15).CGColor,
-                UIColor.clearColor().CGColor]
-            self.layer.insertSublayer(self.gradient, atIndex:0)
+                UIColor.black.withAlphaComponent(0.6).cgColor,
+                UIColor.black.withAlphaComponent(0.15).cgColor,
+                UIColor.clear.cgColor]
+            self.layer.insertSublayer(self.gradient, at:0)
         } else {
             gradient.frame = frame
         }
@@ -209,7 +209,7 @@ private class ShadowView: UIView {
 }
 
 private extension UIColor {
-    func darkerColor(delta: CGFloat) -> UIColor {
+    func darkerColor(_ delta: CGFloat) -> UIColor {
         var h = CGFloat(0)
         var s = CGFloat(0)
         var b = CGFloat(0)

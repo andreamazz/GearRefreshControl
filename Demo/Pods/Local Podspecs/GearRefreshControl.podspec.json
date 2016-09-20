@@ -1,8 +1,9 @@
 {
   "name": "GearRefreshControl",
-  "version": "0.1",
+  "version": "0.3.0",
   "license": "MIT",
   "summary": "A custom animation for the UIRefreshControl",
+  "description": "Provides a custom UIRefreshControl animating a series of cogs",
   "homepage": "https://github.com/andreamazz/GearRefreshControl",
   "social_media_url": "https://twitter.com/theandreamazz",
   "authors": {
@@ -10,7 +11,7 @@
   },
   "source": {
     "git": "https://github.com/andreamazz/GearRefreshControl.git",
-    "tag": "0.1"
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "8.0"
