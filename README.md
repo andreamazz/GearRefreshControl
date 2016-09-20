@@ -4,7 +4,7 @@
 
 [![CocoaPods](https://cocoapod-badges.herokuapp.com/v/GearRefreshControl/badge.svg)](http://cocoapods.org/?q=gearrefreshcontrol)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-![Swift 2.0](https://img.shields.io/badge/swift-2.0-orange.svg)
+![Swift 3.0](https://img.shields.io/badge/swift-3.0-orange.svg)
 
 A custom animation for the UIRefreshControl. Inspired by this [Dribble shot](https://dribbble.com/shots/1974767-gear-powered-pull-to-refresh-animation?list=animated&sort=popular&timeframe=now&offset=19) and [this tutorial](http://www.jackrabbitmobile.com/design/ios-custom-pull-to-refresh-control/). 
 
@@ -21,7 +21,7 @@ A custom animation for the UIRefreshControl. Inspired by this [Dribble shot](htt
 Install through [CocoaPods](http://cocoapods.org)
 
 ```
-pod 'GearRefreshControl', '~> 0.2'
+pod 'GearRefreshControl', '~> 1.0.0'
 
 use_frameworks!
 ```
@@ -32,7 +32,7 @@ Setup your `refreshControl`:
 override func viewDidLoad() {
     super.viewDidLoad()
     gearRefreshControl = GearRefreshControl(frame: self.view.bounds)
-    gearRefreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
+    gearRefreshControl.addTarget(self, action: #selector(ViewController.refresh), for: UIControlEvents.valueChanged)
     self.refreshControl = gearRefreshControl
 }
 ```
@@ -40,7 +40,7 @@ override func viewDidLoad() {
 Update state:
 
 ```swift
-override func scrollViewDidScroll(scrollView: UIScrollView) {
+override func scrollViewDidScroll(_ scrollView: UIScrollView) {
     gearRefreshControl.scrollViewDidScroll(scrollView)
 }
 ```
@@ -55,7 +55,7 @@ self.gearRefreshControl.endRefreshing()
 You can customize the color of the control by setting the `gearTintColor` property:
 
 ```swift
-gearRefreshControl.gearTintColor = .redColor()
+gearRefreshControl.gearTintColor = .red
 ```
 
 Checkout the sample project for the full implementation.
@@ -70,7 +70,7 @@ Thanks to [everyone](https://github.com/andreamazz/GearRefreshControl/graphs/con
 
 #MIT License
 
-	Copyright (c) 2015 Andrea Mazzini. All rights reserved.
+	Copyright (c) 2016 Andrea Mazzini. All rights reserved.
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
