@@ -10,19 +10,19 @@ All notable changes to this project will be documented in this file.
 
 ## [0.3.0](https://github.com/andreamazz/GearRefreshControl/releases/tag/0.3.0)  
 
-###Added 
+### Added 
 - Support to Carthage  
 
 ## [0.2.2](https://github.com/andreamazz/GearRefreshControl/releases/tag/0.2.2)  
 
-###Fixed
+### Fixed
 - Issue with the shadow view not updating properly on rotation. Thanks to [iAugux](https://github.com/iAugux).  
 
 ## [0.2.1](https://github.com/andreamazz/GearRefreshControl/releases/tag/0.2.1)  
 
 ## [0.2](https://github.com/andreamazz/GearRefreshControl/releases/tag/0.2)  
 
-###Added  
+### Added  
 - `gearTintColor` property
 
 ## [0.1](https://github.com/andreamazz/GearRefreshControl/releases/tag/0.1)  
