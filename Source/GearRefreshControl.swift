@@ -123,7 +123,7 @@ open class GearRefreshControl: UIRefreshControl {
 
         // Don't rotate the gears if the refresh animation is playing
         if (!isRefreshing && !isRefreshControlAnimating) {
-            centerGear.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2) * pullRatio)
+            centerGear.transform = CGAffineTransform(rotationAngle: (.pi / 2) * pullRatio)
             topGear.transform = CGAffineTransform(rotationAngle: 0.025 - 0.9 * pullRatio)
             rightGear.transform = CGAffineTransform(rotationAngle: -0.03 + 0.9 * pullRatio)
             bottomGear.transform = CGAffineTransform(rotationAngle: 0.025 - 0.9 * pullRatio)
@@ -168,11 +168,11 @@ private extension GearRefreshControl {
         isRefreshControlAnimating = true
 
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
-            self.centerGear.transform = self.centerGear.transform.rotated(by: CGFloat(M_PI_2))
-            self.topGear.transform = self.topGear.transform.rotated(by: -CGFloat(M_PI_2))
-            self.rightGear.transform = self.rightGear.transform.rotated(by: CGFloat(M_PI_2))
-            self.bottomGear.transform = self.bottomGear.transform.rotated(by: -CGFloat(M_PI_2))
-            self.leftGear.transform = self.leftGear.transform.rotated(by: CGFloat(M_PI_2))
+            self.centerGear.transform = self.centerGear.transform.rotated(by: .pi / 2)
+            self.topGear.transform = self.topGear.transform.rotated(by: -(.pi / 2))
+            self.rightGear.transform = self.rightGear.transform.rotated(by: .pi / 2)
+            self.bottomGear.transform = self.bottomGear.transform.rotated(by: -(.pi / 2))
+            self.leftGear.transform = self.leftGear.transform.rotated(by: .pi / 2)
             }, completion: { finished in
                 // If still refreshing, keep spinning
                 if (self.isRefreshing) {
